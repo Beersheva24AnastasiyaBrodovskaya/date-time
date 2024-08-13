@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: telran.time.DataTimeTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! -- in telran.time.DataTimeTest
+telran.time.DataTimeTest.pastTemporalDateProximityTest -- Time elapsed: 0.005 s <<< ERROR!
+java.time.DateTimeException: Invalid value for MonthOfYear (valid values 1 - 12): 20
+	at java.base/java.time.temporal.ValueRange.checkValidValue(ValueRange.java:319)
+	at java.base/java.time.temporal.ChronoField.checkValidValue(ChronoField.java:718)
+	at java.base/java.time.LocalDate.of(LocalDate.java:273)
+	at telran.time.DataTimeTest.pastTemporalDateProximityTest(DataTimeTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
